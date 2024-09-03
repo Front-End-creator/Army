@@ -363,7 +363,7 @@ body {
     text-align: center;
 }
 
-.main__shadow {
+.possibilities .main__shadow {
     position: absolute;
     width: 700px;
     height: 700px;
@@ -373,4 +373,217 @@ body {
     background: radial-gradient(circle, #F8CD8D 0%, #C58A34 25%, #0C0C0C 70%);
     z-index: -1;
     opacity: 0.2;
+}
+
+.joinus {
+    padding: 128px 80px;
+    position: relative;
+    z-index: 1;
+}
+
+.joinus::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    right: -450px;
+    bottom: -100px;
+    background: radial-gradient(circle, #A51424 0%, #3F080E 70%, #0C0C0C 90%);
+    z-index: -10;
+    opacity: 0.35;
+    filter: blur(20px);
+}
+
+.joinus::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    right: -350px;
+    top: 460px;
+    background: radial-gradient(circle, #A51424 0%, #3F080E 70%, #0C0C0C 90%);
+    z-index: -10;
+    opacity: 0.35;
+    filter: blur(20px);
+}
+
+.joinus__text {
+    text-align: center;
+}
+
+.joinus__text h5 {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0.12em;
+    color: #F2F1F1;
+}
+
+.joinus__text h2 {
+    display: inline-block;
+    font-family: "Oswald", sans-serif;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 80px;
+    letter-spacing: -0.01em;
+    margin-top: 8px;
+    background: radial-gradient(ellipse 250px 250px at 65% 50%, rgba(241, 241, 241, 1) 0%, rgba(241, 241, 241, 1) 30%, rgb(97, 94, 94) 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.joinus__list {
+    list-style: none;
+    width: 100%;
+    margin-top: 80px;
+    padding: 0 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.joinus__item {
+    width: 100%;
+    position: relative;
+    padding: 48px;
+}
+
+.joinus__item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(12, 12, 12, 1);
+    border-radius: 24px;
+    z-index: -2;
+}
+
+.joinus__item::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    background: linear-gradient(180deg, rgb(165, 20, 36) 0%, rgb(63, 8, 14) 100%);
+    border-radius: 25px;
+    z-index: -2;
+}
+
+.joinus__item .shadow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 24px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.joinus__item .shadow::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 900px;
+    height: 900px;
+    background: red;
+    border-radius: 50%;
+    top: -480px;
+    left: -280px;
+    background: radial-gradient(circle, rgba(165, 20, 36, 1) 0%, rgba(63, 8, 14, 1) 70%, rgba(12, 12, 12, 1) 90%);
+    opacity: 35%;
+    filter: blur(50px);
+}
+
+.joinus__promo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.joinus__promo h3 {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.01em;
+    color: #F2F1F1;
+}
+
+.joinus__promo div.joinus__results {
+    width: 536px;
+    background: linear-gradient(180deg, #A51424 0%, #3F080E 100%);
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.joinus__results h4 {
+    font-family: "Oswald", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #F2F1F1;
+    margin-bottom: 12px;
+}
+
+.joinus__results p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #F2F1F1;
+}
+
+.joinus__program {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.joinus__plan,
+.joinus__video {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style: none;
+}
+
+.joinus__video {
+    width: 536px;
+}
+
+.joinus__plan__item,
+.joinus__video__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.joinus__plan__item p,
+.joinus__video__item p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #F2F1F1;
+}
+
+.joinus__video__heading {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: #F2F1F1;
 }
