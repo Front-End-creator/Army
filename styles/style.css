@@ -107,7 +107,8 @@ body.dissabled {
 .audience {
     padding: 128px 80px 128px 80px;
     position: relative;
-    z-index: 2
+    z-index: 2;
+    overflow: hidden;
 }
 
 .audience__promo {
@@ -934,6 +935,7 @@ body.dissabled {
 .results {
     padding: 0 80px;
     position: relative;
+    overflow: hidden;
 }
 
 .results .main__shadow {
@@ -1535,6 +1537,20 @@ footer .main__shadow {
 .privacy span {
     font-weight: 500;
     color: #475467;
+}
+
+@media (max-width: 1500px) {
+    .joinus::before {
+        display: none;
+    }
+
+    .joinus::after {
+        display: none;
+    }
+
+    .results .main__shadow {
+        display: none;
+    }
 }
 
 
