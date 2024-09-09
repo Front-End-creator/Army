@@ -31,8 +31,14 @@ function showSlide(index) {
 
 // Переключение на следующий слайд
 nextButt.forEach(butt => {
+    let helper;
+    if (window.innerWidth > 500) {
+        helper = 3;
+    } else {
+        helper = 4;
+    }
     butt.addEventListener("click", () => {
-        if (counter < 3) {
+        if (counter < helper) {
             counter++;
             showSlide(counter);
         }
@@ -71,8 +77,14 @@ function showSlideResults(index) {
 
 // Переключение на следующий слайд
 nextButtResults.forEach(butt => {
+    let helper;
+    if (window.innerWidth > 500) {
+        helper = 5;
+    } else {
+        helper = 7;
+    }
     butt.addEventListener("click", () => {
-        if (counterResults < 5) {
+        if (counterResults < helper) {
             counterResults++;
             showSlideResults(counterResults);
         }
@@ -120,23 +132,23 @@ let tarrif__name = document.querySelector(".text__and__price .text"),
 let tarrifs = {
     'base': {
         'name__tarrif': 'БАЗОВИЙ',
-        'price': '890 грн',
-        'heading__price': 'Сума: 890 грн',
-        'heading__sum': 'Сума: 890 грн',
+        'price': '1490 грн',
+        'heading__price': 'Сума: 1490 грн',
+        'heading__sum': 'Сума: 1490 грн',
         'link': 'https://secure.wayforpay.com/button/b6adec61620c5',
     },
     'standart': {
         'name__tarrif': 'СТАНДАРТ',
-        'price': '2190 грн',
-        'heading__price': 'Сума: 2190 грн',
-        'heading__sum': 'Сума: 2190 грн',
+        'price': '3290 грн',
+        'heading__price': 'Сума: 3290 грн',
+        'heading__sum': 'Сума: 3290 грн',
         'link': 'https://secure.wayforpay.com/button/bac9cad44d6de',
     },
     'premium': {
         'name__tarrif': 'ПРЕМІУМ',
-        'price': '6990 грн',
-        'heading__price': 'Сума: 6990 грн',
-        'heading__sum': 'Сума: 6990 грн',
+        'price': '7990 грн',
+        'heading__price': 'Сума: 7990 грн',
+        'heading__sum': 'Сума: 7990 грн',
         'link': 'https://secure.wayforpay.com/button/b9babe8ffb73c',
     }
 }
