@@ -131,25 +131,25 @@ let tarrif__name = document.querySelector(".text__and__price .text"),
 
 let tarrifs = {
     'base': {
-        'name__tarrif': 'БАЗОВИЙ',
-        'price': '1490 грн',
-        'heading__price': 'Сума: 1490 грн',
-        'heading__sum': 'Сума: 1490 грн',
-        'link': 'https://secure.wayforpay.com/button/b6adec61620c5',
+        'name__tarrif': 'САМОСТІЙНИЙ',
+        'price': '599 грн',
+        'heading__price': 'Сума: 599 грн',
+        'heading__sum': 'Сума: 599 грн',
+        'link': 'https://secure.wayforpay.com/button/b1a393fb47b64',
     },
     'standart': {
         'name__tarrif': 'СТАНДАРТ',
-        'price': '3290 грн',
-        'heading__price': 'Сума: 3290 грн',
-        'heading__sum': 'Сума: 3290 грн',
-        'link': 'https://secure.wayforpay.com/button/bac9cad44d6de',
+        'price': '1199 грн',
+        'heading__price': 'Сума: 1199 грн',
+        'heading__sum': 'Сума: 1199 грн',
+        'link': 'https://secure.wayforpay.com/button/bc19dad028888',
     },
     'premium': {
         'name__tarrif': 'ПРЕМІУМ',
-        'price': '7990 грн',
-        'heading__price': 'Сума: 7990 грн',
-        'heading__sum': 'Сума: 7990 грн',
-        'link': 'https://secure.wayforpay.com/button/b9babe8ffb73c',
+        'price': '5499 грн',
+        'heading__price': 'Сума: 5499 грн',
+        'heading__sum': 'Сума: 5499 грн',
+        'link': 'https://secure.wayforpay.com/button/b195e6b044a89',
     }
 }
 
