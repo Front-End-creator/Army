@@ -132,23 +132,23 @@ let tarrif__name = document.querySelector(".text__and__price .text"),
 let tarrifs = {
     'base': {
         'name__tarrif': 'САМОСТІЙНИЙ',
-        'price': '650 грн',
-        'heading__price': 'Сума: 650 грн',
-        'heading__sum': 'Сума: 650 грн',
+        'price': '850 грн',
+        'heading__price': 'Сума: 850 грн',
+        'heading__sum': 'Сума: 850 грн',
         'link': 'https://secure.wayforpay.com/button/b1a393fb47b64',
     },
     'standart': {
         'name__tarrif': 'СТАНДАРТ',
-        'price': '1250 грн',
-        'heading__price': 'Сума: 1250 грн',
-        'heading__sum': 'Сума: 1250 грн',
+        'price': '1450 грн',
+        'heading__price': 'Сума: 1450 грн',
+        'heading__sum': 'Сума: 1450 грн',
         'link': 'https://secure.wayforpay.com/button/bc19dad028888',
     },
     'premium': {
         'name__tarrif': 'ПРЕМІУМ',
-        'price': '5550 грн',
-        'heading__price': 'Сума: 5550 грн',
-        'heading__sum': 'Сума: 5550 грн',
+        'price': '6550 грн',
+        'heading__price': 'Сума: 6550 грн',
+        'heading__sum': 'Сума: 6550 грн',
         'link': 'https://secure.wayforpay.com/button/b195e6b044a89',
     }
 }
